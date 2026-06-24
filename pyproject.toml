@@ -1,0 +1,15 @@
+[project]
+name = "bpc-cli"
+version = "1.0.0"
+description = "基于 click 调用系统 7z 的压缩/解压命令行工具"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "click>=8",
+]
+
+[project.scripts]
+bpc = "bpc_cli.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
